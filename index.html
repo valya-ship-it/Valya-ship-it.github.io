@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valia Naurah Indriyani Putri Ramadhan | My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="relative font-Zelda">
+    <!-- HEADER & NAVBAR -->
+    <header class="z-[60] sticky top-0">
+        <nav class="relative z-[60] flex items-center justify-between
+            backdrop-filter backdrop-blur-md bg-opacity-40
+            sm:px-6 md:px-16 lg:px-[90px] h-[90px]">
+            <!-- LOGO -->
+            <a href="#hero">
+                <img class="sm:h-12 lg:h-14 w-auto" src="./images/navbar/Navbar/navbar-logo.svg" alt="Home">
+            </a>
+            <!-- DESKTOP MENU -->
+            <ul class=" hidden lg:flex lg:flex-row gap-[64px] text-white text-[2rem]">
+                <li>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#hero">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#myskills">My Skills</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-[#F3B641]" href="#experience">My Experience</a>
+                </li>
+            </ul>
+            <!-- SOCIAL MEDIA -->
+            <div class="flex flex-row items-center gap-3">
+                <div class="hidden lg:flex flex-row items-center gap-[15px]">
+                    <a href="https://x.com/HMSI_ITS" target="_blank" rel="noopener noreferrer">
+                        <img class="w-11" src="./images/navbar/Navbar/x-logo.svg" alt="X">
+                    </a>
+                    <a href="https://www.tiktok.com/@hmsi_its" target="_blank" rel="noopener noreferrer">
+                        <img class="w-11" src="./images/navbar/Navbar/tiktok-logo.svg" alt="TikTok">
+                    </a>
+                    <a href="https://www.instagram.com/hmsi_its" target="_blank" rel="noopener noreferrer">
+                        <img class="w-11" src="./images/navbar/Navbar/ig-logo.svg" alt="Instagram">
+                    </a>
+                    <a href="https://youtube.com/@layarHMSI" target="_blank" rel="noopener noreferrer">
+                        <img class="w-11" src="./images/navbar/Navbar/yt-logo.svg" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+
+            <!-- HAMBURGER BUTTON -->
+            <button id="hamburgerBtn" type="button" class="flex xl:hidden items-center justify-center
+                w-[48px] h-[48px] bg-[#4C1C0E] rounded-lg z-[60]" aria-label="Buka menu" aria-controls="mobileMenu"
+                aria-expanded="false">
+                <img id="iconHamburger" src="./images/navbar/Navbar/menu.svg" alt="" class="h-[38.97px] w-[38.97px]">
+                <img id="iconClose" src="./images/navbar/Navbar/exit.svg" alt="" class="h-[38.97px] w-[38.97px] hidden">
+            </button>
+        </nav>
+        <!-- MOBILE SIDEBAR -->
+        <div id="mobileMenu" over:underline hover:text-[#F3B641] class="xl:hidden fixed inset-0 translate-x-full z-[50]
+            backdrop-blur-md bg-black/40
+            transition-transform duration-300 ease-in-out">
+            <div class="h-[90px]"></div>
+            <ul class="flex flex-col items-center text-center
+                py-6 text-white text-[2rem]">
+                <li class="w-full py-4">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#hero">Home</a>
+                </li>
+                <li class="w-full py-4">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#aboutme">About Me</a>
+                </li>
+                <li class="w-full py-4">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#myskills">My Skills</a>
+                </li>
+                <li class="w-full py-4">
+                    <a class="hover:underline hover:text-[#F3B641]" href="#experience">My Experience</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- BACKGROUND -->
+    <main class="relative text-white ">
+
+        <div class="fixed inset-0 -z-20 bg-cover bg-center
+            bg-[url('./images/hero/IGNIS.png')]">
+        </div>
+        <div id="bg-overlay" class="fixed inset-0 -z-10 bg-black opacity-0 pointer-events-none">
+        </div>
+        <!-- SECTION 1: HERO -->
+        <section id="hero" class="w-full flex flex-col pt-[166px] md:pt-[270.5px] justify-center items-center gap-4">
+            <h1
+                class="font-zelda text-center text-[112px] uppercase text-[4rem] md:text-[6rem] lg:text-[8rem] text-white text-center [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
+                My Portfolio
+            </h1>
+
+
+
+
+
+            <div
+                class="flex min-w-[338px] lg:w-[700.39px] aspect-[341/43] items-center justify-center bg-[url(images/hero/paper-scroll-hero-mobile.svg)] lg:bg-[url(images/hero/paper-scroll-hero-desktop.svg)] bg-center bg-cover lg:bg-contain bg-no-repeat pb-1.5">
+                <p class="text-[#7A3D21] sm:text-[1.7rem] md:text-[1.7rem] lg:text-[2rem] font-times font-bold">Valia
+                    Naurah Indriyani Putri Ramadhan</p>
+            </div>
+            <div class="flex w-full justify-center items-center transition-all duration-100 hover:brightness-90">
+                <a href="#aboutme"
+                    class="px-[51px] py-[4px] md:px-[119.5px] md:py-[8px] bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)] rounded-[8px] border-[#F3B641] border-[1px] outline-[#592918] outline-[1px] drop-shadow-[0_8px_0_#592918]">
+                    <p class="uppercase text-white text-[1.3rem] md:text-[1.75rem] md:leading-none">EXPLORE MORE</p>
+                </a>
+            </div>
+
+        </section>
+        <!-- SECTION 2: ABOUT ME -->
+        <section id="aboutme"
+            class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 px-6 md:px-16 lg:px-[90px] mt-100 lg:mt-60">
+            <div class="order-1 lg:order-2 shrink-0">
+                <div class="relative w-[240px] md:w-[280px] lg:w-[340px] aspect-[700/1040]">
+                    <img src="images/card.png" alt="Kartu profil"
+                        class="absolute inset-0 w-full h-full z-10 pointer-events-none" />
+                </div>
+            </div>
+
+
+            <div class="order-2 lg:order-1 flex flex-col gap-4 max-w-[560px] text-center lg:text-left">
+                <h1 class="uppercase text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white
+    [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21]
+    text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
+                    ABOUT<span class="hidden lg:inline"> ME</span>
+                </h1>
+
+                <p
+                    class="text-center font-times text-[#F9DCB4] sm:text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] leading-snug text-justify">
+                    Halo semua namaku Vivi. dari jurusan RPL SMKN 1 Surabaya. Saya mengikuti SIMETRI karena ingin
+                    belajar tentang UI/UX IT</p>
+            </div>
+            </div>
+
+
+        </section>
+
+        <!-- SECTION 3: MY SKILLS -->
+        <section id="myskills" class="flex justify-center mt-100">
+            <div class="flex flex-col text-center gap-4">
+                <!-- judul + papan di sini -->
+                <h1 class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white
+           [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21]
+           text-shadow-[0_5px_0_#7A3D21] lg:text-shadow-[0_10px_0_#7A3D21] leading-none">
+                    MY SKILLS
+                </h1>
+
+                <div class="relative">
+                    <!-- Laptop dan tablet -->
+                    <img src="images/wood plank.svg" alt="Papan kayu"
+                        class="hidden md:block lg:w-[769.08px] md:w-[500.17px]">
+
+                    <!-- Mobile -->
+                    <img src="images/wood plank - mobile.svg" alt="Papan kayu" class="block md:hidden w-[25rem]">
+                    <div class="absolute inset-0 flex flex-col text-left px-20 pt-10 gap-1 text-[#592918]">
+                        <h1 class="text-[2.75rem] md:text-[2.5rem] lg:text-[3.75rem]">Aku tertarik simetri</h1>
+                        <ul class="font-times list-disc ml-8 text-[1rem] md:text-[1.5rem] lg:text-[2rem]">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TailWind</li>
+                        </ul>
+                        <div class="flex w-full justify-center items-center">
+                            <a href="#experience" class="absolute bottom-[40px] md:bottom-[25px] lg:bottom-[50px] px-8 pt-[8px] rounded-[8px]
+                             bg-[linear-gradient(to_bottom,#F36F41_0%,#F39241_50%,#F36F41_50%,#F39241_100%)]
+                             border-[1px] border-[#F3B641] outline-[1px] outline-[#592918]
+                             drop-shadow-[0_5px_0_#592918] hover:brightness-90">
+                                <p class="text-white text-[2rem] md:text-[1.5rem] lg:text-[2.5rem] leading-none">My
+                                    Experience</p>
+                            </a>
+                            <!-- tombol di Langkah 6 -->
+                        </div>
+
+                        <!-- konten teks di Langkah 5 -->
+                    </div>
+                </div>
+        </section>
+
+
+        </section>
+        <!-- SECTION 4: MY EXPERIENCE -->
+        <section id="experience" class="mt-100 mb-50">
+            <div class="flex flex-col gap-[1rem] items-center">
+                <h1
+                    class="text-[3.5rem] md:text-[4.5rem] lg:text-[6rem] text-white [-webkit-text-stroke:1px_#7A3D21] lg:[-webkit-text-stroke:2px_#7A3D21] text-shadow-[0_5px_0_#7A3D21] text-center">
+                    MY EXPERIENCE</h1>
+                <div class="flex flex-col md:flex-row gap-[1rem]">
+                    <img class="w-[22.5rem] lg:w-[30rem]" src="images/fotoku/foto1.png" alt="Deskripsi foto 1">
+                    <img class="w-[22.5rem] lg:w-[30rem]" src="images/fotoku/foto2.png" alt="Deskripsi foto 2">
+                </div>
+                <div class="flex flex-col md:flex-row gap-[1rem]">
+                    <img class="w-[22.5rem] lg:w-[30rem]" src="images/fotoku/foto3.png" alt="Deskripsi foto 3">
+                    <img class="w-[22.5rem] lg:w-[30rem]" src="images/fotoku/foto4.png" alt="Deskripsi foto 4">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="w-full h-[500px] md:h-[350px] lg:h-[600px]
+        bg-[url('./images/footer/bg_footer.png')]
+        bg-cover bg-center px-4 py-8 lg:px-[90px]
+        lg:py-[88px] lg:border-t-[20px] lg:border-t-[#7A3D21]
+        flex justify-center items-center">
+
+        <div class="flex flex-col sw-full h-[440px] md:w-170
+            lg:w-full md:h-full
+            bg-[url('./images/footer/frame-footer-mobile.png')]
+            md:bg-[url('./images/footer/frame-footer-desktop.png')]
+            bg-center bg-contain bg-no-repeat px-6 py-10
+            lg:bg-[url('images/footer/frame-footer-desktop.png')], lg:w-[1000px], lg:h-full, dan lg:py-10
+            lg:px-[20px] items-center justify-center">
+            <div class="flex flex-col lg:flex-row
+                items-center justify-center gap-2 lg:gap-6">
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4]
+                    text-[1.5rem] lg:text-[32px]" href="#hero">HOME</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4]
+                    text-[1.5rem] lg:text-[32px]" href="#aboutme">ABOUT ME</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4]
+                    text-[1.5rem] lg:text-[32px]" href="#myskills">MY SKILLS</a>
+                <a class="text-[#C07E4E] hover:text-[#F9DCB4]
+                    text-[1.5rem] lg:text-[32px]" href="#experience">MY EXPERIENCE</a>
+            </div>
+            <p class="font-times font-bold text-[#F9DCB4]
+                text-[15px] lg:text-[20px] mt-4">
+                &copy; SIMETRI HMSI ITS
+            </p>
+        </div>
+
+        <script src="./bgScrollEffect.js"></script>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="./mobileNav.js"></script>
+
+</body>
+
+</html>
